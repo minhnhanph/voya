@@ -1,69 +1,79 @@
 @font-face {
-    font-family: 'Beautique Display';
-    src: url('Beautique Display/BeautiqueDisplay-Light.otf') format('opentype');
+    font-family: "Beautique Display";
+    src: url("assets/Beautique Display/BeautiqueDisplay-Light.otf")
+        format("opentype");
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Beautique Display';
-    src: url('Beautique Display/BeautiqueDisplay-LightItalic.otf') format('opentype');
+    font-family: "Beautique Display";
+    src: url("assets/Beautique Display/BeautiqueDisplay-LightItalic.otf")
+        format("opentype");
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Beautique Display';
-    src: url('Beautique Display/BeautiqueDisplay-Regular.otf') format('opentype');
+    font-family: "Beautique Display";
+    src: url("assets/Beautique Display/BeautiqueDisplay-Regular.otf")
+        format("opentype");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Beautique Display';
-    src: url('Beautique Display/BeautiqueDisplay-Italic.otf') format('opentype');
+    font-family: "Beautique Display";
+    src: url("assets/Beautique Display/BeautiqueDisplay-Italic.otf")
+        format("opentype");
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Beautique Display';
-    src: url('Beautique Display/BeautiqueDisplay-Medium.otf') format('opentype');
+    font-family: "Beautique Display";
+    src: url("assets/Beautique Display/BeautiqueDisplay-Medium.otf")
+        format("opentype");
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Beautique Display';
-    src: url('Beautique Display/BeautiqueDisplay-MediumItalic.otf') format('opentype');
+    font-family: "Beautique Display";
+    src: url("assets/Beautique Display/BeautiqueDisplay-MediumItalic.otf")
+        format("opentype");
     font-weight: 500;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Beautique Display';
-    src: url('Beautique Display/BeautiqueDisplay-Bold.otf') format('opentype');
+    font-family: "Beautique Display";
+    src: url("assets/Beautique Display/BeautiqueDisplay-Bold.otf")
+        format("opentype");
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Beautique Display';
-    src: url('Beautique Display/BeautiqueDisplay-BoldItalic.otf') format('opentype');
+    font-family: "Beautique Display";
+    src: url("assets/Beautique Display/BeautiqueDisplay-BoldItalic.otf")
+        format("opentype");
     font-weight: 700;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Beautique Display';
-    src: url('Beautique Display/BeautiqueDisplay-Black.otf') format('opentype');
+    font-family: "Beautique Display";
+    src: url("assets/Beautique Display/BeautiqueDisplay-Black.otf")
+        format("opentype");
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Beautique Display';
-    src: url('Beautique Display/BeautiqueDisplay-BlackItalic.otf') format('opentype');
+    font-family: "Beautique Display";
+    src: url("assets/Beautique Display/BeautiqueDisplay-BlackItalic.otf")
+        format("opentype");
     font-weight: 900;
     font-style: italic;
 }
@@ -75,15 +85,20 @@
 }
 
 :root {
-    --bg-color: #F8F6F3;
-    --text-dark: #1A1A1A;
+    --bg-color: #f8f6f3;
+    --text-dark: #1a1a1a;
     --text-gray: #666666;
-    --accent-orange: #FF5900;
-    --white: #FFFFFF;
+    --accent-orange: #ff5900;
+    --white: #ffffff;
 }
 
 body {
-    font-family: 'Schibsted Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-family:
+        "Schibsted Grotesk",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
     background-color: var(--bg-color);
     color: var(--text-dark);
     line-height: 1.6;
@@ -91,8 +106,13 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Beautique Display', serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Beautique Display", serif;
 }
 
 .container {
@@ -130,7 +150,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 13px;
     letter-spacing: 0.21em;
     text-transform: uppercase;
-    color: #5F6566;
+    color: #5f6566;
     font-weight: 700;
     line-height: 1em;
     margin-bottom: 8px;
@@ -143,17 +163,17 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     line-height: 1.2em;
     margin-bottom: 8px;
-    color: #2A3132;
+    color: #2a3132;
 }
 
 .voya-name {
-    color: #FF5900;
+    color: #ff5900;
 }
 
 .subheading {
     font-size: 16px;
     letter-spacing: -0.2px;
-    color: #5F6566;
+    color: #5f6566;
     font-weight: 400;
     line-height: 1.3em;
     max-width: 500px;
@@ -177,10 +197,10 @@ h1, h2, h3, h4, h5, h6 {
     flex: 1;
     padding: 16px 20px;
     font-size: 16px;
-    border: 0px solid #DDD;
+    border: 0px solid #ddd;
     border-radius: 8px;
-    background-color: #EBE9E4;
-    font-family: 'Schibsted Grotesk', sans-serif;
+    background-color: #ebe9e4;
+    font-family: "Schibsted Grotesk", sans-serif;
     transition: border-color 0.3s ease;
 }
 
@@ -202,13 +222,15 @@ h1, h2, h3, h4, h5, h6 {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    font-family: 'Schibsted Grotesk', sans-serif;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: "Schibsted Grotesk", sans-serif;
+    transition:
+        background-color 0.3s ease,
+        transform 0.2s ease;
     white-space: nowrap;
 }
 
 .cta-button:hover {
-    background-color: #E04A00;
+    background-color: #e04a00;
     transform: translateY(-1px);
 }
 
@@ -241,7 +263,7 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     object-fit: cover;
     border-radius: 80px;
-    border: 12px solid #EBE9E4;
+    border: 12px solid #ebe9e4;
 }
 
 .speech-bubble {
@@ -331,20 +353,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-headline {
-    font-family: 'Beautique Display', serif;
+    font-family: "Beautique Display", serif;
     font-size: 50px;
     font-weight: 700;
     letter-spacing: -0.01em;
     line-height: 1.2em;
     margin-bottom: 8px;
-    color: #2A3132;
+    color: #2a3132;
     text-align: left;
 }
 
 .section-subheading {
     font-size: 16px;
     letter-spacing: -0.2px;
-    color: #5F6566;
+    color: #5f6566;
     margin-bottom: 8px;
     font-weight: 400;
     line-height: 1.3em;
@@ -513,7 +535,7 @@ h1, h2, h3, h4, h5, h6 {
 .new-header-section {
     text-align: center;
     max-width: 800px;
-    margin: 0 auto ;
+    margin: 0 auto;
     /* padding-top: 80px; */
 }
 
@@ -521,26 +543,26 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 13px;
     letter-spacing: 0.21em;
     text-transform: uppercase;
-    color: #5F6566;
+    color: #5f6566;
     margin-bottom: 8px;
     font-weight: 700;
     line-height: 1em;
 }
 
 .new-headline {
-    font-family: 'Beautique Display', serif;
+    font-family: "Beautique Display", serif;
     font-size: 50px;
     font-weight: 700;
     letter-spacing: -0.01em;
     line-height: 1.2em;
     margin-bottom: 8px;
-    color: #2A3132;
+    color: #2a3132;
 }
 
 .new-subheading {
     font-size: 16px;
     letter-spacing: -0.2px;
-    color: #5F6566;
+    color: #5f6566;
     font-weight: 400;
     line-height: 1.3em;
 }
@@ -565,7 +587,7 @@ h1, h2, h3, h4, h5, h6 {
 .feature-card {
     display: flex;
     flex-direction: column;
-    background-color: #EBE9E4;
+    background-color: #ebe9e4;
     border-radius: 16px;
     padding: 0;
     overflow: hidden;
@@ -606,23 +628,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .feature-title {
-    font-family: 'Schibsted Grotesk', sans-serif;
+    font-family: "Schibsted Grotesk", sans-serif;
     font-size: 36px;
     font-weight: 500;
     letter-spacing: -0.02em;
     line-height: 1.3em;
     margin-bottom: 12px;
-    color: #2A3132;
+    color: #2a3132;
     padding: 24px 24px 0 24px;
 }
 
 .feature-description {
-    font-family: 'Schibsted Grotesk', sans-serif;
+    font-family: "Schibsted Grotesk", sans-serif;
     font-size: 16px;
     font-weight: 400;
     letter-spacing: -0.1px;
     line-height: 1.3em;
-    color: #5F6566;
+    color: #5f6566;
     padding: 0 24px 24px 24px;
 }
 
@@ -646,7 +668,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 13px;
     letter-spacing: 0.21em;
     text-transform: uppercase;
-    color: #5F6566;
+    color: #5f6566;
     margin-bottom: 8px;
     font-weight: 700;
     line-height: 1em;
@@ -654,19 +676,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .launch-headline {
-    font-family: 'Beautique Display', serif;
+    font-family: "Beautique Display", serif;
     font-size: 64px;
     font-weight: 700;
     letter-spacing: -2px;
     line-height: 1.2em;
     margin-bottom: 8px;
-    color: #2A3132;
+    color: #2a3132;
 }
 
 .launch-description {
     font-size: 17px;
     letter-spacing: -0.2px;
-    color: #5F6566;
+    color: #5f6566;
     margin-bottom: 8px;
     font-weight: 400;
     line-height: 1.3em;
@@ -686,10 +708,10 @@ h1, h2, h3, h4, h5, h6 {
     flex: 1;
     padding: 16px 20px;
     font-size: 16px;
-    border: 1px solid #DDD;
+    border: 1px solid #ddd;
     border-radius: 8px;
     background-color: var(--white);
-    font-family: 'Schibsted Grotesk', sans-serif;
+    font-family: "Schibsted Grotesk", sans-serif;
     transition: border-color 0.3s ease;
 }
 
@@ -711,15 +733,17 @@ h1, h2, h3, h4, h5, h6 {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    font-family: 'Schibsted Grotesk', sans-serif;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: "Schibsted Grotesk", sans-serif;
+    transition:
+        background-color 0.3s ease,
+        transform 0.2s ease;
     white-space: nowrap;
     display: flex;
     align-items: center;
 }
 
 .launch-cta-button:hover {
-    background-color: #E04A00;
+    background-color: #e04a00;
     transform: translateY(-1px);
 }
 
@@ -745,7 +769,7 @@ h1, h2, h3, h4, h5, h6 {
 .phone-mockup {
     width: 320px;
     height: 640px;
-    background-color: #1A1A1A;
+    background-color: #1a1a1a;
     border-radius: 40px;
     padding: 12px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
@@ -753,14 +777,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .phone-mockup::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
     width: 120px;
     height: 24px;
-    background-color: #1A1A1A;
+    background-color: #1a1a1a;
     border-radius: 0 0 16px 16px;
     z-index: 10;
 }
@@ -828,7 +852,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Footer */
 .footer {
-    border-top: 1px solid #E0E0E0;
+    border-top: 1px solid #e0e0e0;
     padding-top: 40px;
     margin-top: 80px;
 }
@@ -841,7 +865,6 @@ h1, h2, h3, h4, h5, h6 {
     gap: 20px;
 }
 
-
 .footer-content-left {
     display: flex;
     flex-direction: column;
@@ -850,7 +873,6 @@ h1, h2, h3, h4, h5, h6 {
     flex-wrap: wrap;
     gap: 0px;
 }
-
 
 .footer-content-right {
     display: flex;
@@ -861,9 +883,8 @@ h1, h2, h3, h4, h5, h6 {
     gap: 0px;
 }
 
-
 .footer-voya {
-    font-family: 'Beautique Display', serif;
+    font-family: "Beautique Display", serif;
     font-size: 32px;
     font-style: italic;
     font-weight: 600;
@@ -954,4 +975,3 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 16px;
     }
 }
-
