@@ -142,8 +142,8 @@ h6 {
 }
 
 .compass-icon {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
 }
 
 .tagline {
@@ -178,7 +178,7 @@ h6 {
     line-height: 1.3em;
     max-width: 500px;
     margin: 0 auto 16px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .signup-form {
