@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>dede studio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@300;400;700&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;1,9..144,300&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            :root {
+                --bg-color: #f8f6f3;
+                --text-dark: #2a3132;
+                --text-gray: #5f6566;
+                --accent-orange: #ff5900;
+            }
+
+            body {
+                font-family:
+                    "Schibsted Grotesk",
+                    -apple-system,
+                    BlinkMacSystemFont,
+                    "Segoe UI",
+                    sans-serif;
+                background-color: var(--bg-color);
+                color: var(--text-dark);
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                overflow: hidden;
+                position: relative;
+            }
+
+            /* Subtle floating elements */
+            .floating-shape {
+                position: absolute;
+                border-radius: 50%;
+                background: rgba(255, 89, 0, 0.05);
+                animation: float 20s ease-in-out infinite;
+            }
+
+            .shape-1 {
+                width: 120px;
+                height: 120px;
+                top: 15%;
+                left: 10%;
+                animation-delay: 0s;
+            }
+
+            .shape-2 {
+                width: 80px;
+                height: 80px;
+                top: 70%;
+                right: 15%;
+                animation-delay: -8s;
+            }
+
+            .shape-3 {
+                width: 60px;
+                height: 60px;
+                top: 25%;
+                right: 25%;
+                animation-delay: -15s;
+            }
+
+            @keyframes float {
+                0%,
+                100% {
+                    transform: translateY(0) rotate(0deg);
+                    opacity: 0.3;
+                }
+                25% {
+                    transform: translateY(-20px) rotate(90deg);
+                    opacity: 0.1;
+                }
+                50% {
+                    transform: translateY(10px) rotate(180deg);
+                    opacity: 0.2;
+                }
+                75% {
+                    transform: translateY(-10px) rotate(270deg);
+                    opacity: 0.15;
+                }
+            }
+
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(40px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            @keyframes breathe {
+                0%,
+                100% {
+                    transform: scale(1);
+                }
+                50% {
+                    transform: scale(1.02);
+                }
+            }
+
+            .coming-soon-container {
+                text-align: center;
+                z-index: 10;
+                position: relative;
+                animation: fadeInUp 1.5s ease-out;
+            }
+
+            .studio-name {
+                font-family: "Fraunces", serif;
+                font-size: 2.5rem;
+                font-weight: 300;
+                font-style: italic;
+                color: var(--accent-orange);
+                margin-bottom: 2rem;
+                letter-spacing: 1px;
+                animation: breathe 6s ease-in-out infinite;
+            }
+
+            .coming-soon {
+                font-family: "Fraunces", serif;
+                font-size: 5rem;
+                font-weight: 700;
+                color: var(--text-dark);
+                letter-spacing: -2px;
+                line-height: 1.2;
+                margin-bottom: 1rem;
+                position: relative;
+            }
+
+            .coming-soon::after {
+                content: "";
+                position: absolute;
+                bottom: -10px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 60px;
+                height: 3px;
+                background: var(--accent-orange);
+                border-radius: 2px;
+                opacity: 0.6;
+            }
+
+            .tagline {
+                font-size: 0.9rem;
+                letter-spacing: 0.15em;
+                text-transform: uppercase;
+                color: var(--text-gray);
+                font-weight: 700;
+                margin-top: 2rem;
+                animation: fadeInUp 2s ease-out;
+            }
+
+            /* Responsive adjustments */
+            @media (max-width: 768px) {
+                .coming-soon {
+                    font-size: 3.5rem;
+                    letter-spacing: -1px;
+                }
+
+                .studio-name {
+                    font-size: 2rem;
+                    margin-bottom: 1.5rem;
+                }
+
+                .tagline {
+                    font-size: 0.8rem;
+                }
+
+                .floating-shape {
+                    display: none;
+                }
+            }
+
+            @media (max-width: 480px) {
+                .coming-soon {
+                    font-size: 2.8rem;
+                }
+
+                .studio-name {
+                    font-size: 1.6rem;
+                }
+
+                .tagline {
+                    font-size: 0.7rem;
+                    letter-spacing: 0.1em;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+
+        <div class="coming-soon-container">
+            <div class="studio-name">dede studio</div>
+            <div class="coming-soon">Coming Soon</div>
+            <div class="tagline">Crafting Digital Experiences</div>
+        </div>
+    </body>
+</html>
