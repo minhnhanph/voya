@@ -746,6 +746,7 @@
   line-height: 1.3em;
   color: #5f6566;
   margin: 0;
+  text-align: center;
   max-width: 420px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
