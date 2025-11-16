@@ -705,6 +705,54 @@
   transform: translateY(0);
 }
 
+.row-success {
+  width: 100%;
+}
+
+#mlb2-33162335.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody.row-success {
+  background-color: #ebe9e4;
+  border: none;
+  border-radius: 32px;
+  padding: 24px 32px;
+  margin: 24px auto 16px;
+  max-width: 520px;
+}
+
+#mlb2-33162335.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody.row-success .ml-form-successContent {
+  margin: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+#mlb2-33162335.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody.row-success .ml-form-successContent h4 {
+  font-family: "Schibsted Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+  line-height: 1.3em;
+  color: #ff5900;
+  margin: 0;
+}
+
+#mlb2-33162335.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody.row-success .ml-form-successContent p {
+  font-family: "Schibsted Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+  line-height: 1.3em;
+  color: #5f6566;
+  margin: 0;
+  max-width: 420px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 .ml-subscribe-close {
   width: 30px;
   height: 30px;
@@ -837,4 +885,3 @@
     width: 100% !important;
   }
 }
-
